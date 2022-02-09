@@ -2,14 +2,8 @@
   <div class="container">
     <div class="row">
       <!-- Free Tier -->
-      <div class="col-lg-4">
-        <app-card></app-card>
-      </div>
-      <div class="col-lg-4">
-        <app-card></app-card>
-      </div>
-      <div class="col-lg-4">
-        <app-card></app-card>
+      <div class="col-lg-4" *ngFor="let pricecard of priceCard">
+        <app-card [priceCardData]="pricecard"></app-card>
       </div>
       </div>  
   </div>
